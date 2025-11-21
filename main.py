@@ -1,7 +1,6 @@
 import os
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 import pygame  # noqa: E402
-import time  # noqa: E402
 
 
 def play_music(folder, song_name):
@@ -57,9 +56,6 @@ def play_music(folder, song_name):
             return
         elif command:
             print("Invalid command. Use [P]ause, [R]esume, or [S]top")
-
-        # Small delay to prevent excessive CPU usage when music is playing
-        time.sleep(0.05)
 
 
 def main():

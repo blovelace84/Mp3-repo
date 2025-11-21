@@ -64,10 +64,6 @@ class TestMP3Player(unittest.TestCase):
 class TestPerformanceOptimizations(unittest.TestCase):
     """Test cases to verify performance optimizations."""
 
-    def test_time_module_imported(self):
-        """Verify time module is imported for sleep functionality."""
-        self.assertTrue(hasattr(main, 'time'))
-
     def test_pygame_imported(self):
         """Verify pygame is imported."""
         self.assertTrue(hasattr(main, 'pygame'))
