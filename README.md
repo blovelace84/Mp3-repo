@@ -6,7 +6,6 @@ This project is a simple MP3 player designed to play five songs located in the `
 
 - Plays five MP3 songs from the `Music` directory.
 - User-friendly script for basic music playback.
-- Easy setup and cross-platform compatible (Windows, macOS, Linux).
 
 ## Requirements
 
