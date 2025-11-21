@@ -6,7 +6,7 @@ This project is a simple MP3 player designed to play five songs located in the `
 
 - Plays five MP3 songs from the `Music` directory.
 - User-friendly script for basic music playback.
-
+- Easy set across all platforms (Windows, MacOS and Linux)
 ## Requirements
 
 - Python 3.11
