@@ -4,9 +4,13 @@ This project is a simple MP3 player designed to play five songs located in the `
 
 ## Features
 
-- Plays five MP3 songs from the `Music` directory.
+- Plays MP3 songs from the `Music` directory.
 - User-friendly script for basic music playback.
-- Easy set across all platforms (Windows, MacOS and Linux)
+- Easy setup across all platforms (Windows, MacOS and Linux)
+- **NEW:** Automatic song completion detection - returns to menu when song ends
+- **NEW:** Proper resource management - prevents memory leaks
+- **NEW:** Enhanced pause/resume controls with state validation
+- **NEW:** Comprehensive unit tests and documentation
 ## Requirements
 
 - Python 3.11
@@ -56,11 +60,37 @@ The following Python libraries are used:
 ```
 Mp3-repo/
 │
-├── main.py           # Main program to run the MP3 player
-├── Music/            # Folder containing your five songs
-├── README.md         # This project documentation
+├── main.py                  # Main program to run the MP3 player (optimized)
+├── Music/                   # Folder containing your songs
+├── test_main.py             # Unit tests for the MP3 player
+├── README.md                # This project documentation
+├── OPTIMIZATION_REPORT.md   # Detailed performance optimization report
+├── SUMMARY.md               # Before/after code comparison
+├── .gitignore               # Git ignore rules for Python
 └── .gitattributes
 ```
+
+## Performance Optimizations
+
+This MP3 player has been optimized for better performance and reliability:
+
+1. **Smart Loop Exit** - Automatically exits playback loop when song finishes
+2. **Resource Cleanup** - Proper pygame cleanup prevents memory leaks
+3. **Event Detection** - Detects natural song completion and returns to menu
+4. **State Validation** - Robust pause/resume with clear user feedback
+5. **Code Quality** - PEP 8 compliant, fully tested, documented
+
+See `OPTIMIZATION_REPORT.md` for detailed analysis of all improvements.
+
+## Testing
+
+Run the test suite with:
+
+```sh
+python -m unittest test_main.py -v
+```
+
+All 7 tests should pass successfully.
 
 
 
