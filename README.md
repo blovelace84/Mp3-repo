@@ -10,7 +10,7 @@ This project is a simple MP3 player designed to play five songs located in the `
 
 ## Requirements
 
-- Python 3.x
+- Python 3.11
 - pip (Python package installer)
 
 The following Python libraries are used:
@@ -63,10 +63,9 @@ Mp3-repo/
 └── .gitattributes
 ```
 
-## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
 - Built with [pygame](https://www.pygame.org/).
+- Guide instructed by https://youtu.be/xf71dRBRP6o?si=C6AUA0rakoAMovEW
